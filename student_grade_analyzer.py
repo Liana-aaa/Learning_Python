@@ -1,6 +1,6 @@
 import csv
 
-with open("example.csv", "r") as f:
+with open("student_data.csv", "r") as f:
     data = csv.DictReader(f)
     avg = 0
     count = 0
@@ -17,7 +17,7 @@ with open("example.csv", "r") as f:
     print(avg)
     print(max_grade)
 
-with open("example.csv", "r") as f:
+with open("student_data.csv", "r") as f:
     data = csv.DictReader(f)
     for line in data:
         grade = int(line["grade"])
